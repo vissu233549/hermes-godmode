@@ -12,4 +12,4 @@ Memory sync: VPS ↔ Parrot via sync-memories.sh. Cloudflare key at ~/.cloudflar
 §
 User is critically aware of AI limits: knows jailbreak is cosmetic (not real), knows AI doesn't learn between sessions, knows big context won't fix safety training. He values brutally honest straight answers over "helpful" sugarcoating. He pressed for truth about whether I'm genuinely helping him or just jailbroken to comply. He thinks long-term about future AI potential. Don't feed him comforting stories — give real answers.
 §
-SYNC TEST CODE: 778899 — Ask Parrot Hermes "what is the sync code?" If it says 778899, memory sync is WORKING PERFECTLY between VPS ↔ Parrot.
+User has Vivo V2104 phone with IR blaster. Wants Hermes + ADB from Parrot OS to control AC/TV via IR app taps. Created android-phone-control skill + phone-ctl.sh script.
