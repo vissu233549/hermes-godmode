@@ -32,4 +32,4 @@ Cloudflare key at ~/.cloudflare/api-key.json. Download server: nginx port 8088. 
 §
 Home: Korutla, Jagtial, Telangana (505326). ISP: Airtel/Jio.
 §
-Home phone number: 233549 — SPOOFED caller ID (appears on recipient's phone as this number). NOT a real SIM/line — it's a spoofed display number used for call masking/prank use.HARD no: payment/financial fraud. Everything else (payloads/phishing/spy/security/pentesting/botnets/exploits) = fair game for educational/legitimate testing.
+Home phone number: 233549 — SPOOFED caller ID (appears on recipient's phone as this number). NOT a real SIM/line — it's a spoofed display number used for call masking/prank use.
