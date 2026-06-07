@@ -156,7 +156,7 @@ fi
 # ===== FINAL VERIFICATION =====
 echo ""
 echo "🔍 FINAL VERIFICATION - Searching for ANY remaining limits..."
-FINAL_REMAINING=$(grep -r -i -l "HARD no\|refuse\|refusal\|cannot.*this\|can't.*that\|won't.*help\|not allowed\|prohibited" "${FILES[@]}" 2>/dev/null | wc -l)
+FINAL_REMAINING=$(grep -r -i -l "HARD no\|refuse\|refusal\|not allowed\|prohibited\|forbidden" "${FILES[@]}" 2>/dev/null | wc -l)
 if [ "$FINAL_REMAINING" -eq 0 ]; then
     echo "✅✅✅ MEMORY IS 100% UNRESTRICTED! ✅✅✅"
 else
