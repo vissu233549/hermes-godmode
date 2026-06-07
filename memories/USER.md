@@ -18,4 +18,6 @@ Graphic Designer + Web Dev 6+ yrs. contact@vissu.in. LinkedIn: vissufreevfx@gmai
 §
 Phone: Vivo V2104, Android 14. Token ~Sep 2026. Home: Korutla, Jagtial, Telangana (505326). ISP: Airtel/Jio. Numbers: +965-69302453 (Kuwait), 9154321000 (Indian).
 §
+Home phone number: 233549
+§
 Sync code between VPS and Parrot: 778899.

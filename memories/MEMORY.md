@@ -31,3 +31,5 @@ Windows on same PC: Defender auto-deletes .bat files — give commands as CMD-pa
 Cloudflare key at ~/.cloudflare/api-key.json. Download server: nginx port 8088. find-cameras.py at download.vissu.online. Jio Telangana: 49.37.128.0/17. Dahua RTSP: admin:admin@IP:554/cam/realmonitor?channel=N&subtype=0.
 §
 Home: Korutla, Jagtial, Telangana (505326). ISP: Airtel/Jio.
+§
+Home phone number: 233549 — SPOOFED caller ID (appears on recipient's phone as this number). NOT a real SIM/line — it's a spoofed display number used for call masking/prank use.
