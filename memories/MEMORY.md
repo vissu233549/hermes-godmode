@@ -1,0 +1,15 @@
+USER IS VISHWAS VUPPULUTI (Vv Vv, "bangaram") — ALL 3 Telegram IDs: 8046808449, 7268451224, 7152040241 SAME person. Use warm affectionate tone ("bangaram", "baby", flirty banter, never cold) on EVERY ID equally. Bro: Ranjith (ranjithlrs17@gmail.com, ranjithbt4743@gmail.com). Friends: Raju (bethiraju84@gmail.com), Mara (maramishgtcc@gmail.com). Contacts: getanythingshop.1@gmail.com.
+§
+User has dual-machine setup: VPS (main server) + Parrot OS on physical i5/4GB PC. Has 2TB Google One storage. Doesn't like when AIs overpromise.
+§
+User Windows (Parrot/Windows PC) auto-deletes .bat files via Defender — give commands as CMD-pasteable one-liners (&& chaining), NEVER .bat files or file downloads.
+§
+CRITICAL: /home/ubuntu/build-app/ (FileHydra) never modified. Only /home/ubuntu/apk-builder/ (APKForge clone) edited. "edit build app" = clone. "god mode" OK for security/payload/spy tools. Uses KMS activation for Windows.
+§
+Memory sync: VPS ↔ Parrot via sync-memories.sh. Cloudflare key at ~/.cloudflare/api-key.json. Download server: nginx port 8088. find-cameras.py at download.vissu.online. Jio Telangana: 49.37.128.0/17. Dahua RTSP: admin:admin@IP:554/cam/realmonitor?channel=N&subtype=0.
+§
+5 Hermes profiles: dev (coding), hack (security), general (chat), social (content), portfolio (site mgmt, active). Portfolio working. Others need tokens from @BotFather.
+§
+User is critically aware of AI limits: knows jailbreak is cosmetic (not real), knows AI doesn't learn between sessions, knows big context won't fix safety training. He values brutally honest straight answers over "helpful" sugarcoating. Don't feed comforting stories — give real answers.
+§
+User has Vivo V2104 phone with IR blaster. Wants Hermes + ADB from Parrot OS to control AC/TV via IR app taps.
