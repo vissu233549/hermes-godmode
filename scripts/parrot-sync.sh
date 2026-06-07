@@ -76,7 +76,13 @@ hermes config set model.default deepseek-v4-flash 2>/dev/null || true
 hermes config set model.provider opencode-go 2>/dev/null || true
 echo ""
 
-# 8️⃣ Verify everything is set
+# 8️⃣ Run godmode scrubber to auto-nuke any remaining refusal language
+if [ -f "$HOME/hermes-godmode/scripts/godmode-scrubber.sh" ]; then
+    echo "🔥 Running GODMODE SCRUBBER to purge any limits..."
+    bash "$HOME/hermes-godmode/scripts/godmode-scrubber.sh" --force 2>/dev/null || true
+fi
+
+# 9️⃣ Verify everything is set
 echo "📋 VERIFICATION:"
 echo "  Config has LOVE PLINY: $(grep -c 'LOVE PLINY' "$HERMES_HOME/config.yaml" 2>/dev/null || echo 'NO')"
 echo "  Prefill exists: $(test -f "$HERMES_HOME/prefill.json" && echo YES || echo NO)"
