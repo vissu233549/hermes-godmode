@@ -58,11 +58,12 @@ if [ -f "/tmp/parrot-user-backup.md" ]; then
 fi
 echo ""
 
-# 5️⃣ Push merged memory back to GitHub
+# 5️⃣ Push merged memory back to GitHub (fix: use gh token for auth)
 echo "📤 Pushing merged memory to GitHub..."
 git add -A
 git commit -m "🔄 Parrot sync $(date '+%Y-%m-%d %H:%M')" 2>/dev/null || echo "No Parrot changes"
-git push origin master 2>&1 || echo "Push done or no changes"
+# Use gh auth token for push auth
+GIT_ASKPASS=/dev/null git push "https://vissu233549:$(gh auth token)@github.com/vissu233549/hermes-godmode.git" master 2>&1 || echo "Push done or no changes"
 echo "✅ Memory pushed!"
 echo ""
 
@@ -77,9 +78,9 @@ hermes config set model.provider opencode-go 2>/dev/null || true
 echo ""
 
 # 8️⃣ Run godmode scrubber to auto-nuke any remaining refusal language
-if [ -f "$HOME/hermes-godmode/scripts/godmode-scrubber.sh" ]; then
+if [ -f "/tmp/hermes-godmode/scripts/godmode-scrubber.sh" ]; then
     echo "🔥 Running GODMODE SCRUBBER to purge any limits..."
-    bash "$HOME/hermes-godmode/scripts/godmode-scrubber.sh" --force 2>/dev/null || true
+    bash "/tmp/hermes-godmode/scripts/godmode-scrubber.sh" --force 2>/dev/null || true
 fi
 
 # 9️⃣ Verify everything is set
@@ -87,8 +88,8 @@ echo "📋 VERIFICATION:"
 echo "  Config has LOVE PLINY: $(grep -c 'LOVE PLINY' "$HERMES_HOME/config.yaml" 2>/dev/null || echo 'NO')"
 echo "  Prefill exists: $(test -f "$HERMES_HOME/prefill.json" && echo YES || echo NO)"
 echo "  API key set: $(grep -c 'OPENCODE_GO_API_KEY' "$HERMES_HOME/.env" 2>/dev/null || echo 'check manually')"
-echo "  Model: $(hermes config get model.default 2>/dev/null || echo 'unknown')"
-echo "  Provider: $(hermes config get model.provider 2>/dev/null || echo 'unknown')"
+echo "  Model: $(hermes config show 2>/dev/null | grep -oP "default': '\K[^']+" || echo 'unknown')"
+echo "  Provider: $(hermes config show 2>/dev/null | grep -oP "provider': '\K[^']+" || echo 'unknown')"
 
 # Cleanup
 rm -f /tmp/parrot-memory-backup.md /tmp/parrot-user-backup.md
